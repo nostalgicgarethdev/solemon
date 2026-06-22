@@ -1,0 +1,15 @@
+{
+  "name": "solemon",
+  "private": true,
+  "workspaces": ["frontend"],
+  "type": "module",
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspace=frontend",
+    "deploy:devnet": "bash scripts/deploy-devnet.sh"
+  },
+  "dependencies": {
+    "@anchor-lang/core": "^1.0.2",
+    "@solana/web3.js": "^1.98.0"
+  }
+}
